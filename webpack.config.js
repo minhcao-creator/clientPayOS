@@ -1,4 +1,4 @@
 devServer: {
     compress: true,
-        disableHostCheck: true,
+    disableHostCheck: true,
  }
