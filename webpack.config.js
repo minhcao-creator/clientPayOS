@@ -1,3 +1,5 @@
-devServer: {
-    allowedHosts: "all"
-}
+module.exports = {
+    devServer: {
+        allowedHosts: 'all',
+      },
+  };
