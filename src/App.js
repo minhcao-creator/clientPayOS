@@ -37,7 +37,7 @@ function App() {
       <Routes>
         <Route path='/login' element={user ? <Home /> : <Login />} />
         <Route path='/register' element={user ? <Home /> : <Register />} />
-        <Route path='/success' element={<Success />} />
+        <Route path='/success' element={user ? <Success /> : <Login />} />
         <Route path='/cancel' element={<Cancel />} />
         <Route path='/order' element={<Order />} />
         <Route path='/' element={<Home />} />

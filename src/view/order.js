@@ -33,21 +33,7 @@ function Order() {
   const { orderBooks } = state
   const [prices, setPrices] = useState(0)
 
-  // const hanldePayment = async () => {
-  //   const response = await axios.post("http://localhost:4004/payment", {
-  //     orderCode: Number(String(Date.now()).slice(-6)),
-  //     amount: prices / 10,
-  //     description: 'Thanh toan don hang',
-  //     returnUrl: 'http://172.18.240.1:3000/success',
-  //     cancelUrl: 'http://172.18.240.1:3000/cancel',
-  //     orderBooks: orderBooks
-  //   })
-  //   console.log(response.data)
-  //   window.location.assign(response.data.checkout.checkoutUrl)
-  // }
-
   const hanldePayment = async () => {
-    console.log(user)
     if (user) {
       const response = await axios.post("https://payos.onrender.com/payment", {
         orderCode: Number(String(Date.now()).slice(-6)),
