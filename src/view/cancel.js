@@ -1,10 +1,6 @@
-import React, { useState, useEffect } from 'react'
 import Button from 'react-bootstrap/Button';
-import axios from 'axios'
-
 
 function Cancel() {
-  
 
   return (
     <div className='d-flex align-items-center justify-content-center mt-5'>

@@ -39,8 +39,8 @@ function Order() {
         orderCode: Number(String(Date.now()).slice(-6)),
         amount: prices / 10,
         description: 'Thanh toan don hang',
-        returnUrl: 'http://172.18.240.1:3000/success',
-        cancelUrl: 'http://172.18.240.1:3000/cancel',
+        returnUrl: 'https://clientpayos.onrender.com/success',
+        cancelUrl: 'https://clientpayos.onrender.com/cancel',
         orderBooks: orderBooks
       })
       console.log(response.data)

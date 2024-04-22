@@ -1,22 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
-import axios from 'axios'
 import { useState } from 'react'
 
 function BookCard({ id, title, image, introduction, price, addOrderBooks }) {
-    // const hanldePayment = async () => {
-    //     const response = await axios.post("http://localhost:4004/payment", {
-    //         orderCode: Number(String(Date.now()).slice(-6)),
-    //         amount: price,
-    //         description: 'Thanh toan don hang',
-    //         returnUrl: 'http://172.18.240.1:3000/success',
-    //         cancelUrl: 'http://172.18.240.1:3000/cancel',
-    //         book: id
-    //     })
-    //     console.log(response.data)
-    //     window.location.assign(response.data.checkout.checkoutUrl)
-    // }
     const [choose, setChosse] = useState('Choose')
 
 
